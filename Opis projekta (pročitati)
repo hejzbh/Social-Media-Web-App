@@ -18,3 +18,7 @@ Aplikacija koja ima sljedece mogucnosti:
 - Za detaljnije informacije pogledajte kod.
 
 ZA FUNKCIONISANJE KODA POTREBNO INSTALIRATI NODE I SVE IZ PACKAGE.JSON
+
+- Dio za vremensku prognozu (left sidebar) ne radi zbog toga sto je postignut maximalan broj poziva sa tog API-a, a što se tiče koda sve je uredno.
+
+Live demo: https://heyz-drustvena-mreza.netlify.app/
