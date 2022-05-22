@@ -16,3 +16,5 @@ Aplikacija koja ima sljedece mogucnosti:
 
 - Sve to se vrši slanjem i primanjem podataka sa MOCKapia.
 - Za detaljnije informacije pogledajte kod.
+
+ZA FUNKCIONISANJE KODA POTREBNO INSTALIRATI NODE I SVE IZ PACKAGE.JSON
