@@ -1,0 +1,320 @@
+.edit__profile__section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit__profile__section .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+.edit__profile__section .edit__inner {
+  background: #efeeee;
+  min-width: 70%;
+  min-height: 95%;
+  padding: 1.5em;
+  overflow-y: scroll;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 700px) {
+  .edit__profile__section .edit__inner {
+    min-width: 90% !important;
+  }
+}
+
+.edit__profile__section .edit__inner .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.edit__profile__section .edit__inner .top h3 {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.edit__profile__section .edit__inner .top img {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 50%;
+}
+
+.edit__profile__section .edit__inner .personal__details {
+  background: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 80%;
+  padding: 3em 1.5em;
+}
+
+@media (max-width: 700px) {
+  .edit__profile__section .edit__inner .personal__details {
+    width: 95% !important;
+    color: #056CF4;
+  }
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__top p {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+  .edit__profile__section .edit__inner .personal__details .personal__top p {
+    font-size: 14px;
+  }
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__top button {
+  background: none;
+  border: 0;
+  outline: 0;
+  font-family: 'Poppins';
+  color: #e34f4f;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__top button:hover {
+  background: #e34f4f;
+  border-radius: 7px;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__main {
+  padding: 1em 0;
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__main .personal__row {
+  margin-bottom: 1em;
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__main .personal__row p {
+  color: #b7bec5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__main .personal__row h4 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .edit__profile__section .edit__inner .personal__details .personal__main .personal__row h4 {
+    font-size: 14px;
+  }
+}
+
+.edit__profile__section .edit__inner .personal__details .personal__main .personal__row:last-of-type {
+  margin-bottom: 0;
+}
+
+.edit__profile__section .edit__inner::after {
+  content: '';
+  background: #056CF4;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  right: 0;
+  min-height: 45vh;
+  min-width: 45vh;
+}
+
+.edit__profile__section .edit__inner::-webkit-scrollbar {
+  display: none;
+}
+
+.edit__input {
+  width: 100%;
+  max-width: 200px;
+  outline: 0;
+  border: 1px solid gray;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
+  background: rgba(128, 128, 128, 0.1);
+  padding: 0.5em;
+}
+
+.personal__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personal__bottom button {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  color: red;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error__handling {
+  /*
+background: -webkit-linear-gradient(to top, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 
+background: linear-gradient(to top, #ef473a, #cb2d3e); */
+  z-index: 1300;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 2em;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  -webkit-animation: animationRotate 0.2s linear !important;
+          animation: animationRotate 0.2s linear !important;
+}
+
+@-webkit-keyframes animationRotate {
+  from {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animationRotate {
+  from {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.close__edit {
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: 5%;
+  right: 7%;
+  background: transparent;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+  background: #fff;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+.close__edit i {
+  color: #d73535;
+  font-size: 20px;
+}
+
+.close__edit:hover {
+  -webkit-animation: rotate 0.4s ease;
+          animation: rotate 0.4s ease;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=editprofile.css.map */

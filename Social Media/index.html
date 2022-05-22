@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="./src/style/loginRegisterSection.css">
+    <link rel="stylesheet" href="./src/style/homepage.css">
+    <link rel="stylesheet" href="./src/style/animation.css">
+    <link rel="stylesheet" href="./src/style/editprofile.css">
+    
+    <script type="module" defer src="./src/js/control.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22f5ba3980.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!--E n t r y   s e c t i o n-->
+    <!--Register / Login section-->
+    <div class="entry__section">
+        <div class="entry__split container">
+            <div class="left">
+                <img src="./src/img/logo.png" alt="">
+                <p>Heyz dev</p>
+            </div>
+            <div class="right">
+        
+                <div class="form__place hidden">
+                    <p class="registration__message"></p>
+                    <form action="post" class="forma form__register">
+                        <h2>Register</h2>
+                        <div class="form__row">
+                            <label for="name">First Name</label>
+                            <input type="text" required name="name" class="input__name" placeholder="First Name...">
+                        </div>
+                        <div class="form__row">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" required name="lastname" class="input__lastname" placeholder="Last Name...">
+                        </div>
+                        <div class="form__row">
+                            <label for="email">Your Email</label>
+                            <input type="email"  requiredname="email" class="input__email__registration" placeholder="Email Adress...">
+                        </div>
+                        <div class="form__row">
+                            <label for="pw">Password</label>
+                            <input type="password" required name="pw" class="input__password__registration" placeholder="Password...">
+                        </div>
+                        <button type="submit" class="btn entry__btn btn__register button-29" role="button">Register</button>
+    
+                    </form>
+                    
+                    <div class="if">
+                        <p>You already have an account?</p>
+                        <button class="switchToLogin switch__btn">Log in</button>
+                    </div>
+                </div>
+
+               <div class="form__place">
+                <div class="login__message">
+
+                </div>
+                <form class="forma form__login">
+                    <h2>Login</h2>
+              
+                    <div class="form__row">
+                        <label for="email">Your Email</label>
+                        <input type="email"  requiredname="email" class="input__email__login" placeholder="Email Adress...">
+                    </div>
+                    <div class="form__row">
+                        <label for="pw">Password</label>
+                        <input type="password" required name="pw" class="input__password__login" placeholder="Password...">
+                    </div>
+                    <button type="submit" class="btn entry__btn btn__login button-29" role="button">Login</button>
+
+                </form>
+                <div class="if">
+                    <p>You don't have a account?</p>
+                    <button class="switchToRegister switch__btn">Register</button>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="error__handling hidden">
+        <p class="error__message">Error msg</p>
+    </div>
+
+    <!--H o m e  P a g e    s e c t i o n-->
+    <!--User / Interface section-->
+    <div class="homepage__section hidden">
+    <div class="homepage__inner container">
+        <div class="toggleButtons">
+            <button class="toggle__left"><i class="fa-solid fa-user"></i></button>
+            <button class="toggle__right"><i class="fa-solid fa-users"></i></button>
+        </div>
+        <!--Edit profile-->
+        <div class="edit__profile__section container hidden">
+            <div class="blur"></div>
+             <div class="edit__inner">
+
+                <button class="close__edit"><i class="fa-solid fa-xmark"></i></button>
+                <div class="top">
+                    <h3>Edit profile</h3>
+                    <img src="./src/img/profile-photo.png" alt="">
+                </div>
+                <div class="personal__details">
+                    <div class="personal__top">
+                        <p>Personal details</p>
+                        <button class="edit__profile__btn">Edit</button>
+                    </div>
+                    <form class="personal__main">
+                        <div class="personal__row">
+                            <p>First name</p>
+                            <h4 class="edit__profile__info" data-properties="first_name">Ime</h4>
+                            <input class="edit__input edit_first_name hidden" type="text" placeholder="Update first name">
+                        </div>
+                        <div class="personal__row">
+                            <p>Last name</p>
+                            <h4 class="edit__profile__info" data-properties="last_name">Prezime</h4>
+                            <input class="edit__input edit_last_name hidden" type="text" placeholder="Update last name">
+                        </div>
+                        <div class="personal__row">
+                            <p>Email</p>
+                            <h4 class="edit__profile__info" data-properties="email">email@gmail.com</h4>
+                            <input class="edit__input edit_email hidden" type="text" placeholder="Update email">
+                        </div>
+                        <div class="personal__row">
+                            <p>Password</p>
+                            <h4 class="edit__profile__info" data-properties="password">********</h4>
+                            <input class="edit__input edit_password hidden" type="password" placeholder="Update password">
+                        </div>
+                    </form>
+                    <div class="personal__bottom">
+                        <button class="update__user__info hidden">Update</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="leftSide">
+            <div class="user__info ">
+                <div class="naslovna">
+                    <img src="./src/img/bg.jpg" alt="">
+                </div>
+                <div class="first__row">    
+                    <img src="./src/img/profile-photo.png" alt="">
+                    <p class="user__name">nekoIme</p>
+                </div>
+                <div class="second__row">
+                    <button class="edit__profile">Edit Profile</button>
+                </div>
+                <div class="third__row">
+                    <button class="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+               
+                </div>
+            </div>
+            <div class="weather">
+                <div class="top">
+                   <div class="temp__details">
+                    <p class="user__city">Accept location / Reload</p>
+                   </div>
+                </div>
+                <img src="./src/img/weatherPNG.png" alt="">
+              
+            </div>
+            
+            <button class="button__close__left"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <main>
+                <div class="main__inner">
+                    <h2>Home</h2>
+                    <div class="create__post">
+                        <img src="./src/img/profile-photo.png" alt="">
+                        <form action="" class="form__create__post">
+                        <textarea  id="post__content" rows="5" placeholder="What is happening?"></textarea>
+                        <button type="submit" class="submit__post">Post</button>
+                        </form>
+                    </div>
+
+
+                    <!--All posts-->
+                    <div class="list__of__post">
+            <!--
+                        <div class="post white__section">
+                           <div class="post__creator__info">
+                            <div class="post__left">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="post__content">
+                            <p>Neki tekst nešto...</p>
+                        </div>
+                        <div class="post__react">
+                            <button class="likePost"><i class="fa-solid fa-heart"></i></button>
+                          <form action="">
+                            <textarea placeholder="Add commentar" id="comment" rows="2"></textarea>
+                            <button class="submit__comment">Comment</button>
+                          </form>
+                        </div>
+                        <div class="list__of__comments">
+                            <div class="comment">
+                                <img src="./src/img/profile-photo.png" alt="">
+                                <div class="comment__info">
+                                <p class="comment__user">Hazim</p>
+                                <p class="comment_date">3hrs ago</p>
+                                <p class="comment__content">Svaka ti čast brate moj najludji si </p>
+                                <button class="likeComment"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    -->          
+                </div>
+        </main>
+
+       <div class="homepage_right ">
+            <div class="users">
+                <h3>Users</h3>
+                <div class="search__users__div">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="search__users" placeholder="Search by names">
+                </div>
+                <ul class="list__of__users ">
+               
+                </ul>
+            </div>
+           <button class="close__right__side"><i class="fa-solid fa-xmark"></i></button>
+       </div>
+    </div>
+    </div>
+
+
+
+    <!--Spinner-->
+    
+</body>
+</html>
