@@ -1,0 +1,17 @@
+#  Social-Media-Web-App
+Social Network (API)
+
+An application that has the following features:
+1) Create an account
+2) Log in to your account
+3) Post posts
+4) Delete posts
+5) Post comments
+6) Delete comments
+7) Like pos
+t 8) Unlike post
+9) Edit profile
+10) Search users 
+11) ...
+
+- All this is done by sending and receiving data from MOCKapia. - See code for more detailed information.
